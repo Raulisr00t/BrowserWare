@@ -105,6 +105,7 @@ if __name__ == '__main__':
                     client.sendall(data.encode())
         else:
             print(f"[ERR] File not found: {filename}")
-
+        os.remove(filename)
+        
     except Exception as e:
         print("[ERR] %s" % str(e))
